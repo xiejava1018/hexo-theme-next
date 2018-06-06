@@ -7,8 +7,18 @@
   background: rgba(255,255,255,0.65);
   margin-left: auto;
   margin-right: auto;
-  width:450px;
+  width:470px;
   border-radius: initial;
+
++mobile() {
+    margin: 20px 0 0 0;
+    padding: 0;
+    }
+      
+br { display: none; }
+
++mobile() { float: none; }
+
 
 }
 
@@ -19,11 +29,37 @@
   margin: 0 10px;
   list-style: none;
 
+  +mobile() { display: block; }
+
+  .badge {
+      display: inline-block;
+      padding: 1px 4px;
+      margin-left: 5px;
+      font-weight: 700;
+      line-height: 1;
+      color: $black-light;
+      text-align: center;
+      white-space: nowrap;
+      background-color: #fff;
+      border-radius: 10px;
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+      +mobile() {
+        float: right;
+        margin: 0.35em 0 0 0;
+      }
+    }
+
   @media screen and (max-width: 767px) {
     margin-top: 10px;
   }
 
   a {
+    padding: 0 10px;
+    border: none;
+    border-radius: 2px;
+    transition-property: background;
+
+
     display: block;
     font-size: 16px;
     text-transform: capitalize;
@@ -35,6 +71,17 @@
       border-bottom-color: $menu-link-hover-border;
       color: $menu-link-hover-border;
     }
+
+  +mobile() {
+      text-align: left;
+    }
+
+  a::before {
+      display: none;
+
+      +mobile() { display: block; }
+    }
+
   }
 
   .fa { margin-right: 5px; }
