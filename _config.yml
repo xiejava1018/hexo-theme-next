@@ -84,11 +84,11 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: / || home
-  #categories: /categories
-  tags: /tags || tags
-  archives: /archives || archive
-  about: /about || user
+  home: /||home
+  categories: /categories
+  tags: /tags||tags
+  archives: /archives||archive
+  about: /about||user
   # schedule: /schedule
   #sitemap: /sitemap.xml
 
@@ -125,8 +125,8 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
+social:
+  GitHub: https://github.com/yourname || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -147,8 +147,9 @@ links_icon: link
 links_title: 友情链接
 # links_layout: block
 links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  爱分享读书: http://www.ishareread.com/
+  CSDN: https://blog.csdn.net/fullbug
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -707,7 +708,7 @@ canvas_nest: false
 three_waves: false
 
 # canvas_lines
-canvas_lines: true
+canvas_lines: false
 
 # canvas_sphere
 canvas_sphere: false
