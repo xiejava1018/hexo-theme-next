@@ -385,11 +385,11 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  enable: true
+  appid: LfKg3xroRwHlese1o0oSY2zx-gzGzoHsz # your leancloud application appid
+  appkey: NXbIDcd2qs0UWvoi0MXdwbmW # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
@@ -539,8 +539,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: 
-  app_key: 
+  app_id: LfKg3xroRwHlese1o0oSY2zx-gzGzoHsz
+  app_key: NXbIDcd2qs0UWvoi0MXdwbmW
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -556,7 +556,7 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
